@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <img src="feedback.jpg" alt="Feedback Banner" class="banner-image">
+    <h1>Submit Your Feedback</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="feedback.html" class="active">Feedback</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Feedback Form -->
+  <main>
+    <section class="form-section">
+      <form action="#" method="post" class="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedback-type">Feedback Type:</label>
+        <select id="feedback-type" name="feedback-type">
+          <option value="complaint">Complaint</option>
+          <option value="suggestion">Suggestion</option>
+          <option value="inquiry">Inquiry</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Customer Feedback System</p>
+  </footer>
+</body>
+</html>
